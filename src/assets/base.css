@@ -1,0 +1,14 @@
+/* semantic color variables for this project */
+:root {
+  --navbar-light-blue: #2196f3;
+  --application-selected: #ffc107;
+  --headline-background: #eeeeee;
+  --text-gray: gray;
+  --green-succesful: #6ed08f;
+  --red-failed: #dc143c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
