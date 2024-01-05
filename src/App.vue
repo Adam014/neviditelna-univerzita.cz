@@ -1,7 +1,7 @@
 <script setup>
-  import Navbar from './components/Navbar.vue'
-  import Sidebar from './components/Sidebar.vue'
-  import Main from './components/Main.vue'
+  import Navbar from './components/NavbarComponent.vue'
+  import Sidebar from './components/SideBarComponent.vue'
+  import Main from './components/MainComponent.vue'
 
 </script>
 
