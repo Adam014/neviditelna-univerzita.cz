@@ -17,7 +17,7 @@ import IconUser from './icons/IconUser.vue';
           <IconProfile />
           <h3>Jan Musílek</h3>
         </div>
-        <div v-if="userMenuVisible" class="user-menu">
+        <div v-show="userMenuVisible" class="user-menu">
           <div class="user-container">
             <IconUser />
             <div>      
@@ -36,6 +36,7 @@ import IconUser from './icons/IconUser.vue';
 </template>
 
 <script>
+
 import { ref } from 'vue';
 
 const userMenuVisible = ref(false);
