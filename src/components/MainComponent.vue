@@ -25,6 +25,7 @@ import OwnerComponent from './OwnerComponent.vue';
                 <StateFlagsComponent />
             </div>
             <div class="side-container">
+                <!-- TODO: Need to add the css of the component-container, so main would have more width than side -->
                 <!-- <OwnerComponent /> -->
             </div>
         </div>

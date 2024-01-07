@@ -1,4 +1,4 @@
-
+<!-- TODO: Fix this component with styling and add the data -->
 <template>
     <section class="owner-container">
         <div class="headline-container">
