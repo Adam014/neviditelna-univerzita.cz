@@ -1,12 +1,13 @@
 <script setup>
 import AuthComponent from './AuthComponent.vue';
+import EventsComponent from './EventsComponent.vue';
 
 
 </script>
 
 <template>
     <main>
-        <h2><bold>neviditelna-univerzita.cz</bold></h2>
+        <h2>neviditelna-univerzita.cz</h2>
         <div class="verbose-view-container">
             <div class="cl-toggle-switch">
                 <label class="cl-switch">
@@ -17,5 +18,6 @@ import AuthComponent from './AuthComponent.vue';
             <h4>Verbose view</h4>
         </div>
         <AuthComponent />
+        <EventsComponent />
     </main>
 </template>
