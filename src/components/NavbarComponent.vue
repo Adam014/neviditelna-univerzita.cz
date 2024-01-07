@@ -1,8 +1,8 @@
 <script setup>
-import IconProfile from './icons/IconProfile.vue';
-import IconHamburger from './icons/IconHamburger.vue';
-import IconLogout from './icons/IconLogout.vue';
-import IconUser from './icons/IconUser.vue';
+import IconProfile from './icons/IconProfile.vue'
+import IconHamburger from './icons/IconHamburger.vue'
+import IconLogout from './icons/IconLogout.vue'
+import IconUser from './icons/IconUser.vue'
 </script>
 
 <template>
@@ -20,13 +20,13 @@ import IconUser from './icons/IconUser.vue';
         <div v-show="userMenuVisible" class="user-menu">
           <div class="user-container">
             <IconUser />
-            <div>      
+            <div>
               <h3>Jan Musílek</h3>
               <h5>ADMIN</h5>
             </div>
           </div>
           <div class="logout-container">
-            <IconLogout/>      
+            <IconLogout />
             <p>Logout</p>
           </div>
         </div>
@@ -36,13 +36,11 @@ import IconUser from './icons/IconUser.vue';
 </template>
 
 <script>
+import { ref } from 'vue'
 
-import { ref } from 'vue';
-
-const userMenuVisible = ref(false);
+const userMenuVisible = ref(false)
 
 const toggleUserMenu = () => {
-  userMenuVisible.value = !userMenuVisible.value;
-};
-
+  userMenuVisible.value = !userMenuVisible.value
+}
 </script>
