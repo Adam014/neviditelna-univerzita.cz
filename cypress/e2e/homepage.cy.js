@@ -21,5 +21,14 @@ describe('HomePage test', () => {
 
     // Test MainComponent
     cy.get('main h2 bold').should('have.text', 'neviditelna-univerzita.cz');
+
+    // Test password toggle in your Vue component
+    // Click on the button to show the password
+    cy.get('.auth-container button').click();
+    cy.get('.auth-container .secret-password').should('be.visible')
+
+    // Click on the button again to hide the password
+    cy.get('.auth-container button').click();
+    cy.get('.auth-container .secret-password').should('not.be.visible');
   });
 });
