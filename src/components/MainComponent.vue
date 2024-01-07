@@ -2,7 +2,6 @@
 import AuthComponent from './AuthComponent.vue'
 import EventsComponent from './EventsComponent.vue'
 import StateFlagsComponent from './StateFlagsComponent.vue'
-import OwnerComponent from './OwnerComponent.vue'
 </script>
 
 <template>
