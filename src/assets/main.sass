@@ -120,5 +120,130 @@ aside
 
 main
     grid-area: main
+    padding: 30px 0px 0px 60px
+
+.verbose-view-container
+    display: flex
+    padding: 20px 0px 0px 0px
+    margin-left: -10px
+
+    h4
+        padding-left: 20px
+        font-size: 0.9rem
+        opacity: 0.7
+        font-weight: lighter
+    .cl-toggle-switch 
+        position: relative 
+    .cl-switch 
+        position: relative 
+        cursor: pointer
+        display: inline-block 
+        & > input 
+            appearance: none 
+            -moz-appearance: none 
+            -webkit-appearance: none 
+            z-index: -1 
+            position: absolute 
+            right: 6px 
+            top: -8px 
+            display: block 
+            margin: 0 
+            border-radius: 50% 
+            width: 40px 
+            height: 40px 
+            background-color: rgb(0, 0, 0, 0.38) 
+            outline: none 
+            opacity: 0 
+            transform: scale(1) 
+            pointer-events: none 
+            transition: opacity 0.3s 0.1s, transform 0.2s 0.1s 
+            &:checked 
+                right: -10px 
+                background-color: var(--navbar-light-blue)
+                & + span 
+                    &::before 
+                        background-color: var(--navbar-light-blue)
+                    &::after 
+                        background-color: var(--navbar-light-blue)
+                        transform: translateX(16px) 
+                &:active 
+                    & + span 
+                        &::before 
+                            background-color: var(--navbar-light-blue)
+                &:disabled 
+                    & + span 
+                        &::before 
+                            background-color: #bfdbda 
+                        &::after 
+                            background-color: var(--navbar-light-blue)
+            &:focus 
+                opacity: 0.12 
+            &:active 
+                opacity: 1 
+                transform: scale(0) 
+                transition: transform 0s, opacity 0s 
+                & + span 
+                    &::before 
+                        background-color: #8f8f8f 
+            &:disabled 
+                opacity: 0 
+                & + span 
+                    &::before 
+                        background-color: #ddd 
+        & > span 
+            &::before 
+                content: "" 
+                float: right 
+                display: inline-block 
+                margin: 5px 0 5px 10px 
+                border-radius: 7px 
+                width: 36px 
+                height: 14px 
+                background-color: rgb(0, 0, 0, 0.38) 
+                vertical-align: top 
+                transition: background-color 0.2s, opacity 0.2s 
+            &::after 
+                content: "" 
+                position: absolute 
+                top: 2px 
+                right: 16px 
+                border-radius: 50% 
+                width: 20px 
+                height: 20px 
+                background-color: #fff 
+                box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) 
+                transition: background-color 0.2s, transform 0.2s 
+        &:hover 
+            & > input 
+                opacity: 0.04 
+                &:focus 
+                    opacity: 0.16 
+
+.auth-container
+    -webkit-box-shadow: 0 3px 8.5px 1.5px #dddddd
+    -moz-box-shadow: 0 3px 8.5px 1.5px #dddddd
+    box-shadow: 0 3px 8.5px 1.5px #dddddd
+    width: 60%
+    margin-top: 20px
+    padding: 10px
     h2
-        padding: 30px 0px 0px 60px
+        font-size: 1rem
+        padding: 5px 0px 5px 10px
+        span
+            font-weight: lighter
+            padding-left: 100px
+        .secret-password
+            padding-left: 110px
+        button  
+            cursor: pointer
+            margin-left: 110px
+            width: 6rem
+            padding: 10px
+            background-color: var(--navbar-light-blue)
+            border:0
+            outline: 0
+            color: white
+            -webkit-box-shadow: 0 3px 8.5px 1.5px #dddddd
+            -moz-box-shadow: 0 3px 8.5px 1.5px #dddddd
+            box-shadow: 0 3px 8.5px 1.5px #dddddd
+            border-radius: 5px
