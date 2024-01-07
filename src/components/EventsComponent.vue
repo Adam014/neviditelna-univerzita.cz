@@ -6,9 +6,9 @@
         </div>
         <div class="events-information">
             <div class="column">
-                <h2 data-text="Create date:"><span>{{ formatDate(eventData.registered.timestamp) }}</span></h2>
-                <h2 data-text="Update date:"><span>{{ formatDate(eventData.updated.timestamp) }}</span></h2>
-                <h2 data-text="Transfer date:"><span>{{ formatDate(eventData.transferred.timestamp) }}</span></h2>
+                <h2 data-text="Create date:" class="create-event"><span class="event-date">{{ formatDate(eventData.registered.timestamp) }}</span></h2>
+                <h2 data-text="Update date:" class="update-event"><span class="event-date">{{ formatDate(eventData.updated.timestamp) }}</span></h2>
+                <h2 data-text="Transfer date:" class="transfer-event"><span class="event-date">{{ formatDate(eventData.transferred.timestamp) }}</span></h2>
                 <h2 data-text="Delete date:"></h2><br />
             </div>
             <div class="column">

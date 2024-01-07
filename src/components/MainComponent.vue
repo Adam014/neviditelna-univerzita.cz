@@ -8,7 +8,9 @@ import OwnerComponent from './OwnerComponent.vue';
 
 <template>
     <main>
-        <h2>neviditelna-univerzita.cz</h2>
+        <div class="main-title">
+            <h2>neviditelna-univerzita.cz</h2>
+        </div>
         <div class="verbose-view-container">
             <div class="cl-toggle-switch">
                 <label class="cl-switch">

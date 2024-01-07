@@ -1,3 +1,5 @@
+import { getEventData, formatDate } from '../../src/utils/utils';
+
 describe('HomePage test', () => {
   it('visits the app root url and tests components', () => {
     // Visit the homepage
@@ -20,7 +22,15 @@ describe('HomePage test', () => {
     cy.get('aside .sidebar-content h4').should('have.text', 'Registry');
 
     // Test MainComponent
-    cy.get('main h2 bold').should('have.text', 'neviditelna-univerzita.cz');
+    cy.get('main .main-title h2').should('have.text', 'neviditelna-univerzita.cz');
+
+    // Test your Vue component
+    cy.get('.events-container').should('be.visible'); // Check if the component is visible
+
+    // Check the formatted event data using data-text attribute
+    cy.get('.column .create-event .event-date').should('have.text', formatDate(getEventData().registered.timestamp));
+    cy.get('.column .update-event .event-date').should('have.text', formatDate(getEventData().updated.timestamp));
+    cy.get('.column .transfer-event .event-date').should('have.text', formatDate(getEventData().transferred.timestamp));
 
     // Test password toggle in your Vue component
     // Click on the button to show the password
