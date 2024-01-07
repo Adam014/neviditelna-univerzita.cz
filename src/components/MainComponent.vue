@@ -2,7 +2,7 @@
 import AuthComponent from './AuthComponent.vue';
 import EventsComponent from './EventsComponent.vue';
 import StateFlagsComponent from './StateFlagsComponent.vue';
-
+import OwnerComponent from './OwnerComponent.vue';
 
 </script>
 
@@ -18,8 +18,15 @@ import StateFlagsComponent from './StateFlagsComponent.vue';
             </div>
             <h4>Verbose view</h4>
         </div>
-        <AuthComponent />
-        <EventsComponent />
-        <StateFlagsComponent />
+        <div class="component-container">
+            <div class="main-components-container">
+                <AuthComponent />
+                <EventsComponent />
+                <StateFlagsComponent />
+            </div>
+            <div class="side-container">
+                <!-- <OwnerComponent /> -->
+            </div>
+        </div>
     </main>
 </template>

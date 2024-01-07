@@ -223,7 +223,7 @@ main
     -webkit-box-shadow: 0 3px 8.5px 1.5px #dddddd
     -moz-box-shadow: 0 3px 8.5px 1.5px #dddddd
     box-shadow: 0 3px 8.5px 1.5px #dddddd
-    width: 60%
+    width: 125%
     margin-top: 20px
     height: 5.5rem
     display: grid
@@ -293,12 +293,29 @@ main
     .state-flags-information
         @extend .events-information
 
+.owner-container
+    height: auto
+    @extend .events-container
+    .owner-information
+        @extend .events-information
+        grid-template-columns: none
+
+.component-container
+    display: grid
+    grid-template-columns: repeat(2, 1fr) 
+
+
+
 // MEDIA
 @media (max-width: 1500px) 
     .auth-container
         width: 95%
     .events-container
         width: 95%
+    .component-container
+        grid-template-columns: none
+    .owner-container
+        margin-left: 0px
 
 @media (max-width: 1190px) 
     .events-container
@@ -307,5 +324,5 @@ main
             .column
                 .registrar-h2
                     padding-left: 10px
-
-        
+    main
+        padding: 10px 0px 0px 20px
