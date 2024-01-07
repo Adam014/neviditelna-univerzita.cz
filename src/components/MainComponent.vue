@@ -1,6 +1,7 @@
 <script setup>
 import AuthComponent from './AuthComponent.vue';
 import EventsComponent from './EventsComponent.vue';
+import StateFlagsComponent from './StateFlagsComponent.vue';
 
 
 </script>
@@ -19,5 +20,6 @@ import EventsComponent from './EventsComponent.vue';
         </div>
         <AuthComponent />
         <EventsComponent />
+        <StateFlagsComponent />
     </main>
 </template>
