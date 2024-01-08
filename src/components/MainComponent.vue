@@ -2,9 +2,10 @@
 import AuthComponent from './AuthComponent.vue'
 import EventsComponent from './EventsComponent.vue'
 import StateFlagsComponent from './StateFlagsComponent.vue'
-import OwnerComponent from './SideComponents/OwnerComponent.vue';
-import NSSETComponent from './SideComponents/NSSETComponent.vue';
-import KeySetComponent from './SideComponents/KeySetComponent.vue';
+import SideComponents from './SideComponents/index';
+
+// Destructure the exported names
+const { KeySetComponent, AdminContacs, NSSETComponent, OwnerComponent } = SideComponents;
 </script>
 
 <template>
