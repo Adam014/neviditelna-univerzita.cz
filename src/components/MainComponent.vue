@@ -4,6 +4,7 @@ import EventsComponent from './EventsComponent.vue'
 import StateFlagsComponent from './StateFlagsComponent.vue'
 import OwnerComponent from './OwnerComponent.vue';
 import NSSETComponent from './NSSETComponent.vue';
+import KeySetComponent from './KeySetComponent.vue';
 </script>
 
 <template>
@@ -29,6 +30,7 @@ import NSSETComponent from './NSSETComponent.vue';
       <div class="side-containers">
         <OwnerComponent />
         <NSSETComponent />
+        <KeySetComponent />
       </div>
     </div>
   </main>

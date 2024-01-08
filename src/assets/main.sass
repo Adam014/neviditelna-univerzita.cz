@@ -232,7 +232,7 @@ main
     padding-bottom: 5px
     h2
         font-size: 1rem
-        padding: 5px 0px 5px 20px
+        padding: 5px 0px 5px 10px
         span
             font-weight: lighter
             padding-left: 100px
@@ -326,7 +326,25 @@ main
             align-items: center
             display: grid
             span
-                padding-left: 140px
+                padding-left: 120px
+            &:before
+                content: attr(data-text) 
+                position: absolute
+
+.keyset-container
+    @extend  .owner-container
+    .keyset-information
+        @extend .events-information
+        grid-template-columns: none
+        h2
+            align-items: center
+            display: grid       
+            .dns-keys
+                display: block
+                word-wrap: break-word
+                max-width: 17rem
+            span
+                padding-left: 120px
             &:before
                 content: attr(data-text) 
                 position: absolute
@@ -338,14 +356,14 @@ main
     .main-components-container
         width: 100%
     .side-containers
-        width: 50%
+        width: 53.5%
         position: relative
-        left: 30%
+        left: 29.5%
 
 
 
 // MEDIA
-@media (max-width: 1500px) 
+@media (max-width: 1550px) 
     .component-container
         grid-template-columns: none
     .auth-container

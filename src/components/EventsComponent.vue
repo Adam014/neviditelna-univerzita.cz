@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import { getEventData, formatEventData, formatDate } from '../utils/utils'
+import { getEventData, formatEventData, formatDate } from '@/utils/utils'
 
 export default {
   data() {

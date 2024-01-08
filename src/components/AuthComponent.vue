@@ -12,8 +12,7 @@
 </template>
 
 <script>
-import { getAuthInfo } from '../utils/utils'
-import { formatDate } from '../utils/utils'
+import { getAuthInfo, formatDate } from '@/utils/utils'
 
 export default {
   data() {

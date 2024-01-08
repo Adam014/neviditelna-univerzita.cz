@@ -37,7 +37,7 @@ import IconEyeClosed from './icons/IconEyeClosed.vue';
 </template>
 
 <script>
-import { getOwnerInfo } from '../utils/utils';
+import { getOwnerInfo } from '@/utils/utils';
 export default {
   data() {
     return {
