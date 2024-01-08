@@ -2,6 +2,7 @@
 import Navbar from './components/NavbarComponent.vue'
 import Sidebar from './components/SideBarComponent.vue'
 import Main from './components/MainComponent.vue'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 </script>
 
 <template>
@@ -9,5 +10,6 @@ import Main from './components/MainComponent.vue'
     <Navbar />
     <Sidebar />
     <Main />
+    <SpeedInsights />
   </div>
 </template>
