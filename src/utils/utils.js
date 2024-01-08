@@ -21,7 +21,7 @@ export const getKeySetInfo = () => {
 }
 
 export const getAdminsInfo = () => {
-  return domainData.administrative_contacs;
+  return domainData.administrative_contacts;
 }
  
 export const formatDate = (expiresAt) => {

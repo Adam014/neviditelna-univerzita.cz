@@ -5,7 +5,11 @@ import StateFlagsComponent from './StateFlagsComponent.vue'
 import SideComponents from './SideComponents/index';
 
 // Destructure the exported names
-const { KeySetComponent, AdminContacs, NSSETComponent, OwnerComponent } = SideComponents;
+const { KeySetComponent, AdminContacts, NSSETComponent, OwnerComponent } = SideComponents;
+
+import { ref } from 'vue'
+const verboseView = ref(false)
+
 </script>
 
 <template>
@@ -16,11 +20,11 @@ const { KeySetComponent, AdminContacs, NSSETComponent, OwnerComponent } = SideCo
     <div class="verbose-view-container">
       <div class="cl-toggle-switch">
         <label class="cl-switch">
-          <input type="checkbox" />
+          <input type="checkbox" id="checkbox" v-model="verboseView" />
           <span></span>
         </label>
       </div>
-      <h4>Verbose view</h4>
+      <h4>Verbose view: {{ verboseView }}</h4>
     </div>
     <div class="component-container">
       <div class="main-components-container">
@@ -30,6 +34,7 @@ const { KeySetComponent, AdminContacs, NSSETComponent, OwnerComponent } = SideCo
       </div>
       <div class="side-containers">
         <OwnerComponent />
+        <AdminContacts :verboseView="verboseView"/>
         <NSSETComponent />
         <KeySetComponent />
       </div>

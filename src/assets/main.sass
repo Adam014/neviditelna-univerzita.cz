@@ -95,7 +95,7 @@ header
                 font-weight: lighter
 
 aside
-    height: 100vh
+    height: 100%
     width: 15rem
     border-right: 1px solid rgba(0, 0, 0, 0.2)
     grid-area: aside
@@ -120,7 +120,7 @@ aside
 
 main
     grid-area: main
-    padding: 30px 0px 0px 60px
+    padding: 30px 0px 40px 60px
 
 .verbose-view-container
     display: flex
@@ -282,9 +282,6 @@ main
                     padding-left: 180px
                     font-size: 1rem
 
-                &:before
-                    content: attr(data-text) 
-                    position: absolute
             .registrar
                 padding-left: 50px
 
@@ -313,9 +310,6 @@ main
             padding-left: 35px
             span
                 padding-left: 155px
-            &:before
-                content: attr(data-text) 
-                position: absolute
 
 .nsset-container
     @extend .owner-container
@@ -328,27 +322,47 @@ main
             display: grid
             span
                 padding-left: 120px
-            &:before
-                content: attr(data-text) 
-                position: absolute
 
 .keyset-container
     @extend  .owner-container
     .keyset-information
         @extend .events-information
         grid-template-columns: none
+        white-space: nowrap
         h2
             align-items: center
             display: grid       
             .dns-keys
                 display: block
                 word-wrap: break-word
-                max-width: 17rem
+                width: 17.5rem 
             span
                 padding-left: 120px
-            &:before
-                content: attr(data-text) 
+h2
+    &:before
+        content: attr(data-text) 
+        position: absolute
+
+.admin-container
+    @extend  .owner-container
+    .admins-information
+        @extend .events-information
+        grid-template-columns: none
+        .non-verbose
+            h2
+                padding-left: 0px !important
+        .organization-title, .name-title, .handle-title
+            display: flex
+            align-items: center
+            .icon
                 position: absolute
+                padding: 5px 0px 0px 5px
+            h2  
+                padding-left: 35px
+                span
+                    padding-left: 155px
+
+
 
 .component-container
     display: grid
@@ -364,7 +378,7 @@ main
 
 
 // MEDIA
-@media (max-width: 1550px) 
+@media (max-width: 1800px) 
     .component-container
         grid-template-columns: none
     .auth-container
