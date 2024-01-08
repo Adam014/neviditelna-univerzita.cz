@@ -19,13 +19,16 @@
       </div>
       <div class="column">
         <h2 class="registrar-h2">
-          Registrar: <span class="registrar blue-text">{{ eventData.registered.registrar_handle }}</span>
+          Registrar:
+          <span class="registrar blue-text">{{ eventData.registered.registrar_handle }}</span>
         </h2>
         <h2 class="registrar-h2">
-          Registrar: <span class="registrar blue-text">{{ eventData.updated.registrar_handle }}</span>
+          Registrar:
+          <span class="registrar blue-text">{{ eventData.updated.registrar_handle }}</span>
         </h2>
         <h2 class="registrar-h2">
-          Registrar: <span class="registrar blue-text">{{ eventData.transferred.registrar_handle }}</span>
+          Registrar:
+          <span class="registrar blue-text">{{ eventData.transferred.registrar_handle }}</span>
         </h2>
       </div>
     </div>

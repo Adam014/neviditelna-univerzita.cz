@@ -2,14 +2,13 @@
 import AuthComponent from './AuthComponent.vue'
 import EventsComponent from './EventsComponent.vue'
 import StateFlagsComponent from './StateFlagsComponent.vue'
-import SideComponents from './SideComponents/index';
+import SideComponents from './SideComponents/index'
 
 // Destructure the exported names
-const { KeySetComponent, AdminContacts, NSSETComponent, OwnerComponent } = SideComponents;
+const { KeySetComponent, AdminContacts, NSSETComponent, OwnerComponent } = SideComponents
 
 import { ref } from 'vue'
 const verboseView = ref(false)
-
 </script>
 
 <template>
@@ -34,7 +33,7 @@ const verboseView = ref(false)
       </div>
       <div class="side-containers">
         <OwnerComponent />
-        <AdminContacts :verboseView="verboseView"/>
+        <AdminContacts :verboseView="verboseView" />
         <NSSETComponent />
         <KeySetComponent />
       </div>
