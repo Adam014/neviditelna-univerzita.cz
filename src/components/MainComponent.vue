@@ -2,9 +2,9 @@
 import AuthComponent from './AuthComponent.vue'
 import EventsComponent from './EventsComponent.vue'
 import StateFlagsComponent from './StateFlagsComponent.vue'
-import OwnerComponent from './OwnerComponent.vue';
-import NSSETComponent from './NSSETComponent.vue';
-import KeySetComponent from './KeySetComponent.vue';
+import OwnerComponent from './SideComponents/OwnerComponent.vue';
+import NSSETComponent from './SideComponents/NSSETComponent.vue';
+import KeySetComponent from './SideComponents/KeySetComponent.vue';
 </script>
 
 <template>

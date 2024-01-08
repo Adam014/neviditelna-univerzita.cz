@@ -1,6 +1,6 @@
 <script setup>
-import IconEyeTrue from './icons/IconEyeTrue.vue';
-import IconEyeClosed from './icons/IconEyeClosed.vue';
+import IconEyeTrue from '../icons/IconEyeTrue.vue';
+import IconEyeClosed from '../icons/IconEyeClosed.vue';
 </script>
 
 <template>

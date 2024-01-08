@@ -19,6 +19,10 @@ export const getNSSETInfo = () => {
 export const getKeySetInfo = () => {
   return domainData.keyset;
 }
+
+export const getAdminsInfo = () => {
+  return domainData.administrative_contacs;
+}
  
 export const formatDate = (expiresAt) => {
   const expirationDate = new Date(expiresAt)
