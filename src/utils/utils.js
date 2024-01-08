@@ -12,6 +12,10 @@ export const getOwnerInfo = () => {
   return domainData.owner;
 };
 
+export const getNSSETInfo = () => {
+  return domainData.nsset;
+}
+ 
 export const formatDate = (expiresAt) => {
   const expirationDate = new Date(expiresAt)
 

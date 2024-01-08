@@ -3,6 +3,7 @@ import AuthComponent from './AuthComponent.vue'
 import EventsComponent from './EventsComponent.vue'
 import StateFlagsComponent from './StateFlagsComponent.vue'
 import OwnerComponent from './OwnerComponent.vue';
+import NSSETComponent from './NSSETComponent.vue';
 </script>
 
 <template>
@@ -26,8 +27,8 @@ import OwnerComponent from './OwnerComponent.vue';
         <StateFlagsComponent />
       </div>
       <div class="side-containers">
-        <!-- TODO: Need to add the css of the component-container, so main would have more width than side -->
         <OwnerComponent />
+        <NSSETComponent />
       </div>
     </div>
   </main>

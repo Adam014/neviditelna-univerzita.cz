@@ -307,11 +307,26 @@ main
             align-items: center
             .icon
                 position: absolute
-                padding-top: 5px
+                padding: 5px 0px 0px 5px
         h2  
             padding-left: 35px
             span
                 padding-left: 155px
+            &:before
+                content: attr(data-text) 
+                position: absolute
+
+.nsset-container
+    @extend .owner-container
+    .nsset-information
+        @extend .events-information
+        grid-template-columns: none
+
+        h2
+            align-items: center
+            display: grid
+            span
+                padding-left: 140px
             &:before
                 content: attr(data-text) 
                 position: absolute
