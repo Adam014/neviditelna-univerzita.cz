@@ -23,7 +23,7 @@ const verboseView = ref(false)
           <span></span>
         </label>
       </div>
-      <h4>Verbose view: {{ verboseView }}</h4>
+      <h4>Verbose view</h4>
     </div>
     <div class="component-container">
       <div class="main-components-container">
