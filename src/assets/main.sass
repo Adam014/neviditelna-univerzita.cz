@@ -283,11 +283,13 @@ main
                     font-size: 1rem
 
                 &:before
-                    content: attr(data-text) // Set the content to the original text
+                    content: attr(data-text) 
                     position: absolute
             .registrar
-                color: var(--navbar-light-blue)
                 padding-left: 50px
+
+.blue-text
+    color: var(--navbar-light-blue)
 
 .state-flags-container
     @extend .events-container
@@ -300,10 +302,30 @@ main
     .owner-information
         @extend .events-information
         grid-template-columns: none
+        .organization-title, .name-title
+            display: flex
+            align-items: center
+            .icon
+                position: absolute
+                padding-top: 5px
+        h2  
+            padding-left: 35px
+            span
+                padding-left: 155px
+            &:before
+                content: attr(data-text) 
+                position: absolute
 
 .component-container
     display: grid
     grid-template-columns: repeat(2, 1fr) 
+    width: 100%
+    .main-components-container
+        width: 100%
+    .side-containers
+        width: 50%
+        position: relative
+        left: 30%
 
 
 
@@ -313,6 +335,9 @@ main
         grid-template-columns: none
     .auth-container
         width: 90%
+    .side-containers
+        width: 100% !important
+        left: 0% !important
 
 @media (max-width: 1190px) 
     .events-container

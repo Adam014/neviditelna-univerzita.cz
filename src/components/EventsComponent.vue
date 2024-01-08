@@ -19,13 +19,13 @@
       </div>
       <div class="column">
         <h2 class="registrar-h2">
-          Registrar: <span class="registrar">{{ eventData.registered.registrar_handle }}</span>
+          Registrar: <span class="registrar blue-text">{{ eventData.registered.registrar_handle }}</span>
         </h2>
         <h2 class="registrar-h2">
-          Registrar: <span class="registrar">{{ eventData.updated.registrar_handle }}</span>
+          Registrar: <span class="registrar blue-text">{{ eventData.updated.registrar_handle }}</span>
         </h2>
         <h2 class="registrar-h2">
-          Registrar: <span class="registrar">{{ eventData.transferred.registrar_handle }}</span>
+          Registrar: <span class="registrar blue-text">{{ eventData.transferred.registrar_handle }}</span>
         </h2>
       </div>
     </div>
@@ -33,9 +33,7 @@
 </template>
 
 <script>
-import { getEventData } from '../utils/utils'
-import { formatEventData } from '../utils/utils'
-import { formatDate } from '../utils/utils'
+import { getEventData, formatEventData, formatDate } from '../utils/utils'
 
 export default {
   data() {

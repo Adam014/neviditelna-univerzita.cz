@@ -1,12 +1,16 @@
 import domainData from '../utils/domain-detail.json'
 
 export const getEventData = () => {
-  return domainData.events
+  return domainData.events;
 }
 
 export const getAuthInfo = () => {
-  return domainData
+  return domainData;
 }
+
+export const getOwnerInfo = () => {
+  return domainData.owner;
+};
 
 export const formatDate = (expiresAt) => {
   const expirationDate = new Date(expiresAt)

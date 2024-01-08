@@ -2,6 +2,7 @@
 import AuthComponent from './AuthComponent.vue'
 import EventsComponent from './EventsComponent.vue'
 import StateFlagsComponent from './StateFlagsComponent.vue'
+import OwnerComponent from './OwnerComponent.vue';
 </script>
 
 <template>
@@ -24,9 +25,9 @@ import StateFlagsComponent from './StateFlagsComponent.vue'
         <EventsComponent />
         <StateFlagsComponent />
       </div>
-      <div class="side-container">
+      <div class="side-containers">
         <!-- TODO: Need to add the css of the component-container, so main would have more width than side -->
-        <!-- <OwnerComponent /> -->
+        <OwnerComponent />
       </div>
     </div>
   </main>
