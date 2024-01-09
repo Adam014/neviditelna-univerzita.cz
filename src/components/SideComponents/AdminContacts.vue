@@ -9,7 +9,7 @@ import IconEyeClosed from '../icons/IconEyeClosed.vue'
       <div class="headline-container">
         <h2>Administrative contact{{ adminInfo.length > 1 ? 's' : '' }}:</h2>
       </div>
-      <div class="admins-information">
+      <div class="admin-information">
         <h2
           v-for="admin in adminInfo"
           :key="admin.handle"

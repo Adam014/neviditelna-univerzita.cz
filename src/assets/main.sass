@@ -300,6 +300,8 @@ main
         .flag
             display: flex     
             align-items: center
+            .icon
+                padding-top: 5px
             h5
                 padding-left: 5px
     .grid-layout
@@ -364,7 +366,7 @@ h2
 
 .admin-container
     @extend  .owner-container
-    .admins-information
+    .admins-information, .admin-information
         @extend .events-information
         grid-template-columns: none
         .non-verbose

@@ -29,8 +29,11 @@ describe('HomePage test', () => {
     cy.get('.owner-container').should('be.visible');
     cy.get('.keyset-container').should('be.visible');
     cy.get('.nsset-container').should('be.visible');
-    cy.get('.admin-container').should('be.visible');
+    cy.get('.admin-container .admin-information').should('be.visible');
+    cy.get('.state-flags-container .state-flags-information').should('be.visible');
     cy.get('.verbose-view-container .cl-toggle-switch').click();
+    cy.get('.state-flags-container .grid-layout').should('be.visible');
+    cy.get('.admin-container .admins-information').should('be.visible');
     cy.get('.verbose-view-container .cl-toggle-switch').click();
 
     // Check the formatted event data using data-text attribute

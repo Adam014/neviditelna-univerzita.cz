@@ -21,8 +21,8 @@ import IconEyeClosed from './icons/IconEyeClosed.vue'
     </section>
     <section v-else :class="['state-flags-information', verboseView ? 'grid-layout' : '']">
       <div class="flag" v-for="(flag, index) in flagInfo" :key="index">
-        <span :class="['icon', flag.active ? 'eye-true' : 'eye-closed']">
-          <component :is="flag.active ? IconEyeTrue : IconEyeClosed" />
+        <span :class="['', flag.active ? 'eye-true' : 'eye-closed']">
+          <component :is="flag.active ? IconEyeTrue : IconEyeClosed" class="icon"/>
         </span>
         <h5 :class="['flag-descripton', flag.active ? 'green' : 'red']">{{ flag.description }}</h5>
       </div>
