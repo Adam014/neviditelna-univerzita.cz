@@ -26,6 +26,12 @@ describe('HomePage test', () => {
 
     // Test your Vue component
     cy.get('.events-container').should('be.visible'); // Check if the component is visible
+    cy.get('.owner-container').should('be.visible');
+    cy.get('.keyset-container').should('be.visible');
+    cy.get('.nsset-container').should('be.visible');
+    cy.get('.admin-container').should('be.visible');
+    cy.get('.verbose-view-container .cl-toggle-switch').click();
+    cy.get('.verbose-view-container .cl-toggle-switch').click();
 
     // Check the formatted event data using data-text attribute
     cy.get('.column .create-event .event-date').should('have.text', formatDate(getEventData().registered.timestamp));
