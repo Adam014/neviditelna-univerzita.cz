@@ -24,6 +24,10 @@ export const getAdminsInfo = () => {
   return domainData.administrative_contacts
 }
 
+export const getFlagInfo = () => {
+  return domainData.state_flags.flags;
+}
+
 export const formatDate = (expiresAt) => {
   const expirationDate = new Date(expiresAt)
 

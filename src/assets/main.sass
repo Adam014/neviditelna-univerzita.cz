@@ -290,9 +290,28 @@ main
     cursor: pointer
 
 .state-flags-container
+    height: auto        
+    padding-bottom: 20px
     @extend .events-container
     .state-flags-information
         @extend .events-information
+        grid-template-columns: none
+        padding: 20px 0px 0px 20px
+        .flag
+            display: flex     
+            align-items: center
+            h5
+                padding-left: 5px
+    .grid-layout
+        grid-template-columns: repeat(2, 1fr) 
+
+
+.green
+    color: var(--green-succesful)
+
+.red
+    color: var(--red-failed)
+
 
 .owner-container
     height: auto

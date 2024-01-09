@@ -21,8 +21,8 @@ import IconEyeClosed from '../icons/IconEyeClosed.vue'
       </div>
     </section>
 
-    <section v-else>
-      <section v-for="(admin, index) in adminInfo" :key="index" class="admin-container">
+    <section v-else class="admin-container">
+      <section v-for="(admin, index) in adminInfo" :key="index">
         <div class="headline-container">
           <h2>Administrative contact:</h2>
         </div>

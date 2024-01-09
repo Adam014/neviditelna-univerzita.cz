@@ -29,7 +29,7 @@ const verboseView = ref(false)
       <div class="main-components-container">
         <AuthComponent />
         <EventsComponent />
-        <StateFlagsComponent />
+        <StateFlagsComponent :verboseView="verboseView"/>
       </div>
       <div class="side-containers">
         <OwnerComponent />
