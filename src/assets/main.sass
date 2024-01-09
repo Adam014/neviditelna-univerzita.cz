@@ -227,6 +227,7 @@ main
     width: 125%
     margin-top: 20px
     height: 5.5rem
+    height: auto
     display: grid
     align-items: center
     padding-bottom: 5px
@@ -333,14 +334,15 @@ main
                 padding-left: 155px
 
 .nsset-container
+    height: auto
     @extend .owner-container
     .nsset-information
         @extend .events-information
         grid-template-columns: none
-
-        h2
+        .dns
             align-items: center
-            display: grid
+            display: grid  
+        h2
             span
                 padding-left: 120px
 
@@ -350,8 +352,9 @@ main
         @extend .events-information
         grid-template-columns: none
         white-space: nowrap
-        h2
+        .dnskeys-title
             align-items: center
+        h2
             display: grid       
             .dns-keys
                 display: block
@@ -418,4 +421,24 @@ h2
                 .registrar-h2
                     padding-left: 10px
     main
-        padding: 10px 0px 0px 20px
+        padding: 10px 0px 20px 20px
+
+@media (max-width: 768px)
+    aside
+        display: none
+    main
+        padding: 30px 0px 50px 0px
+    .keyset-container
+        .keyset-information
+            white-space: normal
+            .dns-keys
+                width: 10rem !important
+
+@media (max-width: 500px)
+    h2
+        span
+            padding-left: 0px !important
+    .dns, .dnskeys-title
+        align-items: normal !important
+
+

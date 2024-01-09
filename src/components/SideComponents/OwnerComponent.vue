@@ -10,6 +10,9 @@ import IconEyeClosed from '../icons/IconEyeClosed.vue'
     </div>
     <div class="owner-information">
       <h2 data-text="Handle:">
+        <span v-if="shouldShowBrElement">
+            <br>
+        </span>
         <span class="blue-text">{{ ownerData.handle }}</span>
       </h2>
       <div class="organization-title">
@@ -20,6 +23,9 @@ import IconEyeClosed from '../icons/IconEyeClosed.vue'
           <IconEyeClosed />
         </span>
         <h2 data-text="Organization:">
+          <span v-if="shouldShowBrElement">
+              <br>
+          </span>
           <span>{{ ownerData.organization }}</span>
         </h2>
       </div>
@@ -31,6 +37,9 @@ import IconEyeClosed from '../icons/IconEyeClosed.vue'
           <IconEyeClosed />
         </span>
         <h2 data-text="Name:">
+          <span v-if="shouldShowBrElement">
+              <br>
+          </span>
           <span>{{ ownerData.name }}</span>
         </h2>
       </div>
@@ -39,12 +48,20 @@ import IconEyeClosed from '../icons/IconEyeClosed.vue'
 </template>
 
 <script>
-import { getOwnerInfo } from '@/utils/utils'
+import { getOwnerInfo } from '@/utils/utils';
+import BrMixin from "@/utils/BrMixin";
+
 export default {
   data() {
     return {
       ownerData: getOwnerInfo()
     }
-  }
+  },  
+  computed: {
+    shouldShowBrElement() {
+      return this.windowWidth < 500;
+    }
+  },
+  mixins: [BrMixin],
 }
 </script>

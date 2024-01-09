@@ -6,13 +6,25 @@
     <div class="events-information">
       <div class="column">
         <h2 data-text="Create date:" class="create-event">
-          <span class="event-date">{{ formatDate(eventData.registered.timestamp) }}</span>
+          <span class="event-date">
+            <span v-if="shouldShowBrElement">
+              <br>
+            </span>
+            {{ formatDate(eventData.registered.timestamp) }}</span>
         </h2>
         <h2 data-text="Update date:" class="update-event">
-          <span class="event-date">{{ formatDate(eventData.updated.timestamp) }}</span>
+          <span class="event-date">
+            <span v-if="shouldShowBrElement">
+              <br>
+            </span>
+            {{ formatDate(eventData.updated.timestamp) }}</span>
         </h2>
         <h2 data-text="Transfer date:" class="transfer-event">
-          <span class="event-date">{{ formatDate(eventData.transferred.timestamp) }}</span>
+          <span class="event-date">
+            <span v-if="shouldShowBrElement">
+                <br>
+            </span>
+            {{ formatDate(eventData.transferred.timestamp) }}</span>
         </h2>
         <h2 data-text="Delete date:"></h2>
         <br />
@@ -37,6 +49,7 @@
 
 <script>
 import { getEventData, formatEventData, formatDate } from '@/utils/utils'
+import BrMixin from "@/utils/BrMixin";
 
 export default {
   data() {
@@ -49,6 +62,12 @@ export default {
     formatDate(date) {
       return formatDate(date)
     }
-  }
+  },
+  computed: {
+    shouldShowBrElement() {
+      return this.windowWidth < 500;
+    }
+  },
+  mixins: [BrMixin],
 }
 </script>
