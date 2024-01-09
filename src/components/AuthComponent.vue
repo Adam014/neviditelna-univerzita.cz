@@ -2,7 +2,7 @@
   <section class="auth-container">
     <h2>
       AuthInfo:
-      <span v-show="showPassword" class="secret-password">secretpassword</span>
+      <span v-show="showPassword" class="secret-password">rKN!H?{?60|3no>.8Fs</span>
       <button @click="togglePasswordVisibility">{{ showPassword ? 'HIDE' : 'SHOW' }}</button>
     </h2>
     <h2 class="expires-h2">
